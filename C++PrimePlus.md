@@ -10,6 +10,7 @@ Fuck C++
 pages:678
 date:2023/11/7
 last update:2023/11/12 00:05 Full Combo!
+修正:2023/11/20 bind1st这样的函数已被弃用，应使用更灵活的bind
 
 *作为对前置基础的回顾，预计一周速通*
 
@@ -710,7 +711,7 @@ C++定义了五种迭代器，呈一定层次结构，目的在于尽可能使�
 
 引用头文件functional以使用预定义函数符，如plus<double>()（p575）
 
-使用适配器bind1st(),bind2nd()将二元函数转为一元，如bind1s(multplies<double>(), 2.5)
+使用适配器bind1st(),bind2nd()将二元函数转为一元，如bind1s(multplies<double>(), 2.5)<font color = red>*已弃用*</font>
 
 stl的功能非常丰富，对他能做什么留个印象，如果需要的话查一下就好了，而且感觉很多功能其实还是自己写清晰易懂的实现比较好
 
